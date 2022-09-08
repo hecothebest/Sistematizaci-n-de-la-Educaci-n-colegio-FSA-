@@ -1,0 +1,91 @@
+:root{
+
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+}
+
+/*Globales */
+html{
+    font-size: 62.5%;
+    box-sizing: border-box; /*snipet modelo caja*/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+  
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 3.8rem;
+}
+p{
+    font-size: 1.2rem ;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+/* Cabecera */
+
+nav a{
+    padding-right: 3rem;
+    text-decoration: none;
+    font-size: 2rem;
+    position: relative;
+    
+}
+nav a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 0;
+    height: .6rem;
+    bottom: -2.3rem; 
+    background-image: linear-gradient(to right, #45B7D6, #747DA5);
+    transition: 0.5s all;
+}
+nav a:hover::after{
+    width: 85%;
+}
+
+
+
+
+.caro-edit{
+    height: 55.5rem;
+   
+}
+.carousel-inner{
+    height: 100%;
+}
+.carousel-inner img{
+    max-width: 100%;
+    width: 75%;
+    height: 55rem;
+    object-fit:unset;
+}
+
+
+
+.altura{
+    height: 16rem;
+}
+footer{
+    background-color: #2d314d;
+}
+
+.text-white p:hover{
+    color: #31D35C;
+}
+
